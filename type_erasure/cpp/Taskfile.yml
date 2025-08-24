@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - g++ -std=c++17 te_map.cpp
+
+  run:
+    cmds:
+      - task: build
+      - ./a.out
