@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - rustc te_map.rs -o a.out
+
+  run:
+    cmds:
+      - task: build
+      - ./a.out
